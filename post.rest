@@ -1,9 +1,7 @@
-POST http://localhost:3001/api/blogs
+
+
+
+
+GET http://localhost:3001/api/blogs
 Content-Type: application/json
 
-{
-    "title": "Potsdamer Sea",
-    "author": "Geoff Manaugh",
-    "url": "https://bldgblog.com/2022/06/potsdamer-sea/",
-    "likes": 3 
-}

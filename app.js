@@ -3,10 +3,11 @@ const app = express()
 const cors = require('cors')
 const mongoose = require('mongoose')
 const blogsRouter = require('./controllers/blogs')
+const { MONGODB_URI } = require('./utils/config')
 
 
-const mongoUrl = process.env.MONGODB_URI
-mongoose.connect(mongoUrl)
+
+mongoose.connect(MONGODB_URI)
     .then(result => console.log('connected to Mongo'))
 
 
